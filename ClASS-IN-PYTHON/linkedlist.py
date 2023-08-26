@@ -30,4 +30,5 @@ class linkedList: # here we create a list class means all the collections of nod
 list=linkedList()
 list.append(5)
 list.append(7)
+list.append(8)
 list.display()
