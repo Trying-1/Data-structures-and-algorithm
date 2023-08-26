@@ -20,11 +20,20 @@ class linkedList: # here we create a list class means all the collections of nod
 
 # to display the list we define new method display      
     def display(self): # self here is still representing the list as it is inside the class Linkedlist
-        current=self.head
+        current=self.head # intializing the from where we want to iterate
         while(current): # here we iterate till the last node, means till the end of list.
             print(current.data) # printing or say displaying the data of node
             current=current.next # again going to next node
-                
+    def countNode(self):
+        current=self.head
+        count=0
+        while current:
+            count+=1
+            current=current.next
+        print(f"the length of the list is : {count}")
+        
+        
+        
             
 
 list=linkedList()
@@ -32,3 +41,4 @@ list.append(5)
 list.append(7)
 list.append(8)
 list.display()
+list.countNode()
