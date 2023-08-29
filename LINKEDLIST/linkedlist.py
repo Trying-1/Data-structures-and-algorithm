@@ -38,7 +38,7 @@ class linkedList: # here we create a list class means all the collections of nod
 
 list=linkedList()
 list.append(5)
-list.append(7)
-list.append(8)
+list.append("this is me")
+list.append([3,6,9])
 list.display()
 list.countNode()
