@@ -42,7 +42,7 @@ class musicList:
         if self.head is None:
             print("your List is empty! \n please add music before deleting")
             return
-        elif self.head.songName is songToDelete:
+        elif self.head.SongName is songToDelete:
             self.head=self.head.next
 
         else:
