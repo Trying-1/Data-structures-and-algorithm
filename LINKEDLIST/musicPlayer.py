@@ -14,16 +14,14 @@ class musicList:
         newSong=musicNode(SongName,artist,releaseDate,tags)
         if self.head is None:
             self.head=newSong
-            print(f"inserted {newSong.SongName} successfully")
-            
+            print(f"inserted {newSong.SongName} successfully to head")
             return
-        
         else:
             n=self.head
-            while n is not None:
+            while n.next is not None:
                 n=n.next
-            n=newSong
-            print(f"inserted {newSong.SongName} successfully")
+            n.next=newSong
+            print(f"inserted {newSong.SongName} successfully to the end of list")
             return
     
     def displaySong(self):
@@ -49,9 +47,10 @@ class musicList:
             while n is not None:
                 prevNode=n
                 if n.SongName==songToDelete:
-                    prevNode.next=n.next
+                    nextNode=n.next
                     break
                 n=n.next
+            prevNode.next=nextNode
             print(f"{songToDelete} is deleted")
             return
             
@@ -62,4 +61,4 @@ mysongList.InsertSong("Faded","Alan Walker",2017,["cool","favorite","alone","mem
 mysongList.InsertSong("Alone","Alan Walker",2017,["cool","favorite","alone","memory"])
 mysongList.displaySong()
 mysongList.DeleteSong("Faded")
-
+mysongList.displaySong()
