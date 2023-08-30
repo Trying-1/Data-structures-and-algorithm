@@ -42,13 +42,18 @@ class musicList:
         if self.head is None:
             print("your List is empty! \n please add music before deleting")
             return
+        elif self.head.songName is songToDelete:
+            self.head=self.head.next
+
         else:
             n=self.head
+            prevNode=None
             while n is not None:
-                prevNode=n
+                
                 if n.SongName==songToDelete:
                     nextNode=n.next
                     break
+                prevNode=n
                 n=n.next
             prevNode.next=nextNode
             print(f"{songToDelete} is deleted")
