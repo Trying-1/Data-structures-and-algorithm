@@ -49,9 +49,6 @@ toy_tree=ToyTree(10) # our king toy has number 10
 toy_tree.add_toy(5)
 toy_tree.add_toy(15)
 toy_tree.add_toy(3)
-toy_tree.add_toy(9)
-toy_tree.add_toy(12)
-toy_tree.add_toy(18)
 
     
 #lets play the game 
