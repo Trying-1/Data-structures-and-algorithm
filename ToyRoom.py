@@ -50,6 +50,9 @@ toy_tree.add_toy(5)
 toy_tree.add_toy(15)
 toy_tree.add_toy(3)
 toy_tree.add_toy(9)
+toy_tree.add_toy(12)
+toy_tree.add_toy(18)
+
     
 #lets play the game 
 print(toy_tree.find_toy(7)) # can you find the toy with number7?
