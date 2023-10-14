@@ -1,0 +1,30 @@
+1. Add Vertex
+2. Remove Vertex
+3. Add Edge
+4. Remove Edge
+5. Get Neighbors
+6. Check for Vertex Existence
+7. Check for Edge Existence
+8. Get Degree of a Vertex
+9. Traverse the Graph
+   - Breadth-First Search (BFS)
+   - Depth-First Search (DFS)
+10. Find Shortest Path
+    - Dijkstra's Algorithm
+    - Bellman-Ford Algorithm
+11. Minimum Spanning Tree
+12. Topological Sorting
+13. Cycle Detection
+14. Connectivity Check
+15. Graph Coloring
+16. Maximum Flow
+17. Eulerian Path and Circuit
+18. Hamiltonian Path and Cycle
+19. Planar Graph Testing
+20. Graph Isomorphism
+21. Centrality Measures
+22. Graph Partitioning
+23. Graph Mining
+24. Recommendation Systems
+25. Graph Visualization
+26. Community Detection

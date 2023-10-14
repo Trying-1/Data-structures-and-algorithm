@@ -1,0 +1,62 @@
+Hash tables (or hash maps) are versatile data structures with several essential operations to efficiently store and access key-value pairs. Here's a list of the common operations you can perform on a hash table:
+
+Insertion (Add or Put):
+
+Insert a new key-value pair into the hash table.
+If the key already exists, you can choose to overwrite the existing value, raise an error, or handle duplicates in some other way.
+Retrieval (Get):
+
+Retrieve the value associated with a specific key from the hash table.
+Handle the case where the key does not exist, which could involve returning a default value or indicating that the key is not present.
+Deletion (Remove):
+
+Remove a key-value pair from the hash table based on the provided key.
+Determine how to handle the case where the key does not exist, which could involve ignoring it, raising an error, or returning a value indicating failure.
+Update (Modify):
+
+Retrieve the value associated with a key, modify it, and store the updated value back under the same key.
+This is a combination of retrieval and insertion.
+Search (Contains or ContainsKey):
+
+Check whether a specific key exists in the hash table.
+This operation is often used to determine the presence of a key without retrieving its value.
+Traversing (Iterate or Loop):
+
+Iterate through all the key-value pairs in the hash table.
+Implement this using iterators, loops, or callbacks, depending on the programming language and hash table implementation.
+Resizing (Rehashing):
+
+Periodically resize the hash table to maintain a reasonable load factor.
+When the load factor exceeds a threshold, the hash table is resized, and all key-value pairs are rehashed into the new table.
+Collision Handling:
+
+Manage cases where two or more keys hash to the same index (collision).
+Common collision resolution strategies include separate chaining (using linked lists or other data structures in each bucket), open addressing (probing for the next available slot), and double hashing.
+Clearing (Empty or Clear):
+
+Remove all key-value pairs from the hash table, effectively resetting it to an empty state.
+Count (Size or Length):
+
+Retrieve the number of key-value pairs currently stored in the hash table.
+Load Factor (Check Load):
+
+Calculate the load factor of the hash table, which is the ratio of the number of stored items to the number of available slots or buckets. This helps determine if resizing is necessary.
+Rehash (Rebuild):
+
+Rebuild the entire hash table with new parameters, including the number of buckets and hash functions. This is a more radical operation compared to resizing.
+Key Enumeration (Keys):
+
+Retrieve a collection of all keys stored in the hash table.
+Value Enumeration (Values):
+
+Retrieve a collection of all values stored in the hash table.
+Merging (Merge or Combine):
+
+Combine two hash tables, typically by merging key-value pairs, in the case of duplicate keys, decide whether to overwrite or keep both values.
+Load (Initialize):
+
+Create and initialize a hash table with an initial size and other parameters.
+Rehashing Control (Auto-Resize):
+
+Configure the hash table to automatically resize and rehash when the load factor reaches a certain threshold.
+These operations collectively allow you to manage and utilize hash tables effectively for various applications, such as dictionaries, caches, symbol tables, and more. The specific operation names and how they are implemented may vary depending on the programming language and the hash table variant in use
